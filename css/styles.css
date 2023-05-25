@@ -34,3 +34,13 @@ img{
 
 }
 
+span{
+    display: none;
+}
+.case-pleine:active{
+    border: 4px  dotted black;
+}
+
+.case-pleine:active span{
+    display: block;
+}
