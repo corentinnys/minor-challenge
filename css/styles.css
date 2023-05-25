@@ -2,19 +2,28 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
     margin: auto;
+    padding: 0px;
 }
 
-div{
+.demineur{
+    width: 35%;
+    height: 434px;
+    margin: auto;
+    border-top: 4px solid lightgray;
+    border-left: 4px solid lightgray;
+    border-right: 4px solid rgb(148, 146, 146);
+    border-bottom: 4px solid rgb(148, 146, 146);
+}
+div:not(.demineur){
     width: 50px;
     height: 50px;
     text-align: center;
     background: lightgray;
 }
 
-div:not(div .case-pleine){
-    border: 4px  dotted black;
+div:not(div .case-pleine,.demineur){
+    border: 2px  solid black;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -27,10 +36,10 @@ img{
 }
 .case-pleine{
     background-color: rgb(197, 191, 191);
-    border-top: 4px solid rgb(255, 255, 255);
-    border-left: 4px solid rgb(255, 255, 255);
-    border-right: 4px solid rgb(148, 146, 146);
-    border-bottom: 4px solid rgb(148, 146, 146);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(148, 146, 146);
+    border-bottom: 2px solid rgb(148, 146, 146);
     transition: 0.2s;
     opacity: 1;
 
@@ -40,7 +49,7 @@ span{
     display: none;
 }
 .case-pleine:active{
-    border: 4px  dotted black;
+    border: 4px  solid black;
 }
 
 .case-pleine:active span{
