@@ -1,13 +1,18 @@
 section {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 div{
     width: 50px;
     height: 50px;
     text-align: center;
     background: lightgray;
-    border: 3px  dotted black;
+}
+
+div:not(div .case-pleine){
+    border: 4px  dotted black;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -19,7 +24,13 @@ img{
     width: 100%
 }
 .case-pleine{
-    border: 2px solid lightgray;
-    -webkit-box-shadow: 2px 2px 0px 2px #000000;
-    box-shadow: 2px 2px 0px 2px #000000;
+    background-color: rgb(197, 191, 191);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-left: 4px solid rgb(255, 255, 255);
+    border-right: 4px solid rgb(148, 146, 146);
+    border-bottom: 4px solid rgb(148, 146, 146);
+    transition: 0.2s;
+    opacity: 1;
+
 }
+
